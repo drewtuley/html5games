@@ -47,7 +47,7 @@ function initialise() {
     scale = {x: (canvas.width / 10), y: (canvas.height / 10)};
 
     startUp();
-    setFramerate();
+    
     //timer = setInterval(animate, delay);
 }
 
@@ -61,6 +61,7 @@ function doRestart() {
 
     drawSnake();
     drawJewels();
+    setFramerate();
 }
 function startUp() {
     score = 0;
