@@ -47,7 +47,9 @@ function resetBoard() {
 
 function animate() {
     drawBoard();
-    foundWinner = findWinner();
+    if (!foundWinner) {
+       foundWinner = findWinner();
+    }
     
     showScores();
 }
@@ -99,7 +101,7 @@ function doClick(event) {
             player = (player === P1) ? P2 : P1;
         }
     } else {
-        startUp();
+        resetBoard();
     }
 }
 

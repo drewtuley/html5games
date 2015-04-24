@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
-    <title>Connect4</title>
+    <head>
+        <style type="css/text">
+        td.p1 { color: red;}
+        td.p2 { color: yellow;}
+        #p1 { color: red;}
+        </style>
+        
+        <title>Connect4</title>
+    </head>
+
     <body onLoad="initialise()">
 
         <canvas id="myCanvas" width="140" height="120"
@@ -11,7 +20,7 @@
         <script src="./js/connect4.js" type="text/javascript"></script>
         <table>
             <tr>
-                <td>Winner?</td><td id="winner">&nbsp;</td><td>RED</td><td id = "p2">&nbsp;</td><td>YELLOW</td><td id ="p1">&nbsp;</td>
+                <td>Winner?</td><td id="winner">&nbsp;</td><td class="p1">p1</td><td id = "p1">&nbsp;</td><td class="p2">p2</td><td id ="p2">&nbsp;</td>
             </tr>
         </table>
     </body>
