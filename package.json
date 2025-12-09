@@ -1,0 +1,13 @@
+{
+  "name": "html5games-legacy",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "jquery": "^3.7.1"
+  },
+  "scripts": {
+    "audit": "npm audit --audit-level=high || true",
+    "retire": "retire --path . --outputformat json --outputpath retire-output.json || true"
+  }
+}
+
